@@ -22,12 +22,12 @@
       <h1>
 <a id="timeline" class="anchor" href="#timeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>Timeline</h1>
 
-<p>Timeline is an easy way to showcase events on a line. <a href="http://joeylea.com/timeline/">See it work</a> here.  Timeline's features include autoplay, early preview, and custom timers. It uses no external JavaScript dependencies and works on IE11 and all other major browsers.</p>
+<p>Timeline is an easy way to showcase events. <a href="http://joeylea.com/timeline/">See it here</a>.  Timeline's features include autoplay, early preview, and custom timers. It uses no external JavaScript dependencies and works on IE11 and all other major browsers.</p>
 
 <h3>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h3>
 
-<p>Getting started is easy, but Timeline requires that you use specific ids and classes in order for it to work.  Follow the  instructions below.</p>
+<p>Getting started is easy. Timeline requires that you include a script and stylesheet, and that you use specific ids and classes in your markup.  Follow the instructions below to get started.</p>
 
 <h4>
 <a id="first-include-the-timeline-stylesheet-and-script-into-your-html" class="anchor" href="#first-include-the-timeline-stylesheet-and-script-into-your-html" aria-hidden="true"><span class="octicon octicon-link"></span></a>First, include the Timeline stylesheet and script into your HTML</h4>
@@ -37,19 +37,19 @@
   &lt;link href="/styles/timeline.min.css" rel="stylesheet"&gt;
  &lt;/head&gt;
  &lt;body&gt;
-  &lt;!-- Add your Timeline and events here --&gt;
+  &lt;!-- Add your Timeline markup here --&gt;
   &lt;script src="/js/timeline.min.js"&gt;&lt;/script&gt;
  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
 <h4>
-<a id="next-add-the-timeline-markup-and-your-events" class="anchor" href="#next-add-the-timeline-markup-and-your-events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Next, add the Timeline markup and your events</h4>
+<a id="next-use-the-timeline-markup-to-create-your-line-ball-and-events" class="anchor" href="#next-use-the-timeline-markup-to-create-your-line-ball-and-events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Next, use the Timeline markup to create your line, ball and events</h4>
 
 <pre><code>&lt;div id="tL-body" class="dark-theme round-theme"&gt;
   &lt;div id="tL"&gt;
     &lt;div class="tL line"&gt;&lt;/div&gt;
-    &lt;div class="tL ball"&gt;&lt;/div&gt; &lt;!-- add autoplay id to this element (optional) --&gt;
+    &lt;div class="tL ball"&gt;&lt;/div&gt; &lt;!-- add id=tL-autoplay to this element (optional) --&gt;
 
     &lt;!-- Add your events --&gt;
     &lt;div class="tL event" data-side="right" data-timer="8000"&gt;
@@ -74,14 +74,12 @@
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<p>Get the most out of Timeline.</p>
-
 <h3>
 <a id="autoplay" class="anchor" href="#autoplay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Autoplay</h3>
 
-<p>Autoplay automatically cycles through each event on your timeline.  By default, it spends 12 seconds on each event, but you can modify this using a custom timer (see below). Mouse clicks disable the autoplay, but if restarted, it will begin where it left off.</p>
+<p>Autoplay automatically cycles through each event on your timeline.  By default, it spends 12 seconds on each event, but you can modify this by using a custom timer (see below). Any mouse click will disable autoplay, but if restarted, it begins where it left off.</p>
 
-<p>Enable autoplay by adding an element with the id of <code>tL-autoplay</code> to your page.  How you choose to style this element is up to you, the id <code>tL-autoPlay</code> must be used to trigger the feature. Here is a simple bootstrap example that works nicely with the built in Timeline stylesheet.</p>
+<p>Enable autoplay by adding an element with the id of <code>tL-autoplay</code> to your page.  How you choose to style this element is up to you, but the id <code>tL-autoPlay</code> must be used to trigger the feature. Here is a simple Bootstrap example that works nicely with the built in Timeline stylesheet.</p>
 
 <pre><code>&lt;div class="tL ball" id="tL-autoPlay"&gt;
   &lt;div id="tL-autoPlay-icon"&gt;&lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;&lt;/div&gt;
@@ -101,7 +99,7 @@
 <h3>
 <a id="early-preview" class="anchor" href="#early-preview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Early Preview</h3>
 
-<p>Early preview makes the event body, or a portion of it, visible before it is opened.  Add the <code>early-open</code> class to any .tL.event element to enable Early Preview. To hide specific body content from showing up, use a <code>not-early</code> on the element. </p>
+<p>Early preview makes an event on the Timeline visible before it's clicked.  Add the <code>early-open</code> class to any .tL.event element to enable Early Preview. To hide specific body content from showing up, use a <code>not-early</code> class on the element. </p>
 
 <pre><code>&lt;div class="tL event early-open" data-side="right"&gt;
   ...
