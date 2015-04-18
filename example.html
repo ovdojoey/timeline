@@ -1,0 +1,45 @@
+<html>
+ <head>
+  <title>Timeline Example</title>
+  <link href="styles/timeline.min.css" rel="stylesheet">
+  <style type="text/css">
+  	body{
+  		background: #222;
+  	}
+  </style>
+ </head>
+ <body>
+ 	<div>
+	<div id="tL-body" class="dark-theme round-theme">
+		<br />
+	 	<br />
+		<br />
+	  <div id="tL">
+	    <div class="tL line"></div>
+	    <div class="tL ball"></div> <!-- add id=tL-autoplay to this element (optional) -->
+	    <br />
+	  	<br />
+
+	    <!-- Add your events -->
+	    <div class="tL event" data-side="right" data-timer="8000">
+	      <h4 class="tL title">My first event</h4>
+	      <time class="tL date">Today</time>
+	      <div class="tL body">
+	       <h3>This is timeline!</h3>
+	      </div>
+	    </div>
+	    <div class="tL event" data-side="left">
+	      <h4 class="tL title">Second  event</h4>
+	      <time class="tL date">March 11, 2016</time>
+	      <div class="tL body">
+	        <p>You should check out the autoplay in the docs, wow...</p>
+	      </div>
+	    </div>
+        <div class="tL endBall"></div>
+	  </div>
+	</div>
+	</div>
+	<p style="text-align:center; color: #fff;"><a href="http://ovdojoey.github.io/timeline" style="color: #ddd;">http://ovdojoey.github.io/timeline</a></p>
+  <script src="js/timeline.min.js"></script>
+ </body>
+</html>
