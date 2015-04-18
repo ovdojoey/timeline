@@ -27,7 +27,7 @@
 <h3>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h3>
 
-<p>Timeline requires that you include a script and stylesheet, and that you use specific ids and classes in your markup.  Follow the instructions below to get started.</p>
+<p>First, you will need to include the javascript and stylesheet files.  Next, code your HTML using the specific <em>classes</em> and <em>ids</em> listed.  Follow the instructions below to get started.</p>
 
 <h4>
 <a id="first-include-the-timeline-stylesheet-and-script-into-your-html" class="anchor" href="#first-include-the-timeline-stylesheet-and-script-into-your-html" aria-hidden="true"><span class="octicon octicon-link"></span></a>First, include the Timeline stylesheet and script into your HTML</h4>
@@ -52,7 +52,7 @@
     &lt;div class="tL ball"&gt;&lt;/div&gt; &lt;!-- optional: add id=tL-autoplay to this element --&gt;
 
     &lt;!-- Add your events --&gt;
-    &lt;div class="tL event" data-side="right" data-timer="8000"&gt;
+    &lt;div class="tL event" data-side="right"&gt;
       &lt;h4 class="tL title"&gt;My first event&lt;/h4&gt;
       &lt;time class="tL date"&gt;Today&lt;/time&gt;
       &lt;div class="tL body"&gt;
@@ -70,6 +70,10 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+
+<blockquote>
+<p><strong>NOTE</strong>: Each <em>div</em>, <em>class</em>, <em>data-attribute</em>, and <em>id</em> used above is <strong>required</strong>.  For example, the <code>event</code> div needs both classes <code>.tL</code> and <code>.event</code> added to the element.  Each <code>event</code> div must also have a <code>data-side</code> attribute that is equal to left or right. </p>
+</blockquote>
 
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -89,7 +93,7 @@
 <h4>
 <a id="custom-timer" class="anchor" href="#custom-timer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom Timer</h4>
 
-<p>You can change the amount of time that Autoplay will pause on a particular event by adding the <code>data-timer</code> attribute to any .tL.event element.  Choose your speed in milliseconds, but do not include the unit type: i.e. data-timer=5000. By default Autoplay pauses for 12000ms.</p>
+<p>You can change the amount of time that Autoplay will pause on a particular event by adding the <code>data-timer</code> attribute to any <code>.tL.event</code> element.  Choose your speed in milliseconds, but do not include the unit type: i.e. data-timer=5000. By default Autoplay pauses for 12000ms.</p>
 
 <pre><code>&lt;div class="tL event" data-timer="20000" data-side="right"&gt;
   ...
