@@ -57,9 +57,9 @@
       -o-transform: translateX(-10px);
       transform: translateX(-10px);
       width: 10px;
-      height: 100%;
-      min-height: 100%;
-      bottom:0;top:0;right:0;left:50%;
+      height: 99.25%;
+      min-height: 99.25%;
+      top:0;right:0;left:50%;
       z-index: 15;
     }
 
@@ -100,7 +100,7 @@
       margin: auto;
       position: relative;
       right: 5px;
-      top: 0px;
+      top: 0;
       clear: both;
       z-index: 20;
     }
