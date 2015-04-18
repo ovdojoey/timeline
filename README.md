@@ -68,7 +68,9 @@ Early preview makes an event on the Timeline visible before it's clicked.  Add t
       ...
       <div class="tL body">
         <p>This content will display on the timeline.</p>
-        <p class="not-early">This content will not show up with the early preview and will only display when the event is clicked.</p>
+        <p class="not-early">
+        This content will not show up with the early preview and will only display when the event is clicked.
+        </p>
       </div>
     </div>
 
