@@ -1,6 +1,6 @@
 
 # Timeline
-Timeline is an easy way to showcase events. [See it here](http://joeylea.com/timeline/).  Timeline's features include autoplay, early preview, and custom timers. It uses no external JavaScript dependencies and works on IE11 and all other major browsers.
+Timeline is an easy way to showcase events. [See it here](http://old.joeylea.com/timeline/).  Timeline's features include autoplay, early preview, and custom timers. It uses no external JavaScript dependencies and works on IE11 and all other major browsers.
 
 
 ### Getting Started
